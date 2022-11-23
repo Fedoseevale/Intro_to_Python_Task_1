@@ -10,11 +10,11 @@ iks = int(input('Введите координату точки по оси аб
 igrek = int(input('Введите координату точки по оси ординат больше нуля: '))
 if iks == 0 or igrek == 0:
     print('Вы ввели некорректное значение. Повторите ввод')
-elif iks > 0 and igrek > 0:
+if iks > 0 and igrek > 0:
     print(f'x = {iks}; y = {igrek} -> заданная точка находится в 1-ой четверти')
 elif iks < 0 and igrek > 0:
     print(f'x = {iks}; y = {igrek} -> заданная точка находится во 2-ой четверти')
 elif iks < 0 and igrek < 0:
     print(f'x = {iks}; y = {igrek} -> заданная точка находится в 3-ей четверти')
-else:
+elif iks > 0 and igrek < 0:
     print(f'x = {iks}; y = {igrek} -> заданная точка находится в 4-ой четверти')
